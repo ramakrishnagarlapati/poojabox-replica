@@ -74,6 +74,24 @@ const subMenuContainerList = document.querySelectorAll(".sub-menu-container");
 const mainMenuList = document.querySelector("#mainMenuList");
 const footerNavGroup = document.querySelector("#footerNavGroup");
 
+function expandDropDown() {
+  const navEl = document.querySelector(".navbar-lg");
+  navEl.addEventListener("click", (e) => {
+    const target = e.target;
+    if (target.id === "arrowDown" || target.id === "arrowUp") {
+      const navItem = target.closest(".navbar-lg-item");
+      const arrowDown = navItem.querySelector("#arrowDown");
+      const arrowUp = navItem.querySelector("#arrowUp");
+      const dropDown = navItem.querySelector(".dropdown-list");
+      console.log(navItem);
+      arrowDown.classList.toggle("active");
+      arrowUp.classList.toggle("active");
+      dropDown.classList.toggle("active");
+    }
+  });
+}
+expandDropDown();
+
 mainMenuList.addEventListener("click", (event) => {
   const target = event.target;
 
@@ -88,6 +106,7 @@ mainMenuList.addEventListener("click", (event) => {
     subMenuContainer.classList.toggle("hidden");
   }
 });
+
 function expandNav() {
   const navSections = footerNavGroup.querySelectorAll(".footer-nav");
   if (window.innerWidth >= 768) {
@@ -204,7 +223,6 @@ function implementReadMoreOrLess() {
 }
 implementReadMoreOrLess();
 // categories swiper
-// reviews swiper
 const categoriesSwiper = new Swiper(".categories-container", {
   slidesPerView: 3,
   spaceBetween: 10,

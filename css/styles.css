@@ -72,6 +72,7 @@ button {
     display: flex;
     align-items: center;
     cursor: pointer;
+    position: relative;
 
     & .navbar-lg-item-text {
       color: #282828bf;
@@ -85,14 +86,39 @@ button {
 
     & .material-symbols-outlined {
       display: none;
-      font-size: 14px;
+      font-size: 20px;
       color: #282828bf;
-      transform: translateY(4px);
+      transform: translateY(2px);
 
       &.active {
         display: inline-block;
       }
     }
+  }
+}
+
+.navbar-lg-item .dropdown-list {
+  display: none;
+
+  &.active {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    position: absolute;
+    top: 30px;
+    width: 600px;
+    padding: 15px;
+    border: 1px solid rgba(40, 40, 40, 0.2);
+    border-radius: 2px;
+    background-color: white;
+  }
+
+  & .dropdown-item {
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 7px 15px;
+    color: #282828bf;
+    font-weight: 600;
   }
 }
 
@@ -137,6 +163,9 @@ button {
   position: absolute;
   left: 0;
   top: 80px;
+  background-color: #f7f7f7;
+  border-radius: 25px;
+  padding: 10px;
 
   @media screen and (max-width: 1023px) {
     width: 100%;
