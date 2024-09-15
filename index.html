@@ -1,0 +1,1749 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Pooja Box Replica</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <!-- Linking Swipper JS CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- linking font awesome script -->
+    <script
+      src="https://kit.fontawesome.com/c2d8781b6b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="my-pooja-box-page">
+      <div class="announcement-container">
+        <p class="announcement-message">GET 10% OFF WITH CODE: ILOVEMPB</p>
+      </div>
+      <div class="menu-container" id="menuContainer">
+        <header class="menu-header">
+          <button
+            class="menu-header-button menu-close-button"
+            id="menuCloseButton"
+          >
+            <span class="material-symbols-outlined"> close </span>
+          </button>
+          <a href="/" class="menu-header-logo-link">
+            <img
+              src="./images/logo-sm-md.svg"
+              alt="logo"
+              class="menu-header-logo"
+            />
+          </a>
+          <button
+            class="menu-header-button menu-search-button"
+            id="menuSearchButton"
+          >
+            <span class="material-symbols-outlined"> search </span>
+          </button>
+        </header>
+        <ul class="main-menu-list" id="mainMenuList">
+          <li class="main-menu-item" id="menuItem">
+            <div class="main-menu-item-opening-container">
+              <img
+                src="./images/home-decor_1.webp"
+                class="main-menu-item-logo"
+              />
+              <p class="main-menu-item-title">HOME DECOR</p>
+              <span class="material-symbols-outlined active" id="arrowDown">
+                keyboard_arrow_down
+              </span>
+              <span class="material-symbols-outlined" id="arrowUp">
+                keyboard_arrow_up
+              </span>
+            </div>
+            <div class="sub-menu-container hidden" id="subMenuContainer1">
+              <ul class="dynamic-menu-list" id="dynamicMenuList1"></ul>
+            </div>
+          </li>
+          <li class="main-menu-item">
+            <div class="main-menu-item-opening-container">
+              <img
+                src="./images/healing-crystals_40x.webp"
+                class="main-menu-item-logo"
+              />
+              <p class="main-menu-item-title">HEALING CRYSTALS</p>
+              <span class="material-symbols-outlined active" id="arrowDown">
+                keyboard_arrow_down
+              </span>
+              <span class="material-symbols-outlined" id="arrowUp">
+                keyboard_arrow_up
+              </span>
+            </div>
+            <div class="sub-menu-container hidden" id="subMenuContainer2">
+              <ul class="dynamic-menu-list" id="dynamicMenuList2"></ul>
+            </div>
+          </li>
+          <li class="main-menu-item">
+            <div class="main-menu-item-opening-container">
+              <img
+                src="./images/ganesh-chaturthi-7-sep_40x.webp"
+                class="main-menu-item-logo"
+              />
+              <p class="main-menu-item-title">GANESH CHATURTHI | 7 SEP</p>
+              <span class="material-symbols-outlined active" id="arrowDown">
+                keyboard_arrow_down
+              </span>
+              <span class="material-symbols-outlined" id="arrowUp">
+                keyboard_arrow_up
+              </span>
+            </div>
+            <div class="sub-menu-container hidden" id="subMenuContainer3">
+              <ul class="dynamic-menu-list" id="dynamicMenuList3"></ul>
+            </div>
+          </li>
+        </ul>
+        <div class="second-menu-list-container" id="secondMenuList">
+          <ul class="dynamic-menu-list" id="dynamicMenuList4"></ul>
+        </div>
+      </div>
+      <header class="header">
+        <button class="header-button menu-expand-button" id="menuButton">
+          <span class="material-symbols-outlined"> menu </span>
+          <p class="header-button-text">SHOP</p>
+        </button>
+        <div class="header-logo-and-nav-wrapper">
+          <a href="/" class="header-logo-link">
+            <img src="./images/logo.svg" alt="logo" class="header-logo-image" />
+          </a>
+          <nav class="navbar-lg">
+            <ul class="navbar-lg-list">
+              <li class="navbar-lg-item">
+                <span class="navbar-lg-item-text">Shop</span>
+                <span class="material-symbols-outlined active">
+                  keyboard_arrow_down
+                </span>
+                <span class="material-symbols-outlined">
+                  keyboard_arrow_up
+                </span>
+              </li>
+              <li class="navbar-lg-item">
+                <span class="navbar-lg-item-text">Home Decor</span>
+                <span class="material-symbols-outlined active">
+                  keyboard_arrow_down
+                </span>
+                <span class="material-symbols-outlined">
+                  keyboard_arrow_up
+                </span>
+              </li>
+              <li class="navbar-lg-item">
+                <a href="/" class="navbar-lg-item-text navbar-lg-item-link"
+                  >Festive Decor</a
+                >
+              </li>
+              <li class="navbar-lg-item">
+                <a href="/" class="navbar-lg-item-text navbar-lg-item-link"
+                  >Corporate Gifting</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header-search-and-cart-buttons-wrapper">
+          <button class="header-button search-button" id="searchButton">
+            <span class="material-symbols-outlined"> search </span>
+            <p class="header-button-text">Search</p>
+          </button>
+          <div class="search-input-container" id="searchInputContainer">
+            <span class="material-symbols-outlined"> search </span>
+            <input
+              type="text"
+              name="search"
+              id="searchInput"
+              placeholder="Search..."
+              class="search-input"
+            />
+            <button class="search-input-close-button" id="searchCloseButton">
+              <span class="material-symbols-outlined"> close </span>
+            </button>
+          </div>
+          <button class="header-button cart-button">
+            <span class="material-symbols-outlined"> shopping_bag </span>
+            <p class="header-button-text">Cart</p>
+          </button>
+        </div>
+      </header>
+      <main class="main-container">
+        <div class="video-container">
+          <video
+            src="https://cdn.shopify.com/videos/c/o/v/3c919ae7359149ca970e45206bfd4911.mp4"
+            autoplay
+            loop
+            muted
+            class="video"
+          ></video>
+        </div>
+        <!-- categories swiper -->
+        <div class="categories-container swiper">
+          <ul class="categories-list swiper-wrapper">
+            <li class="category-item swiper-slide">
+              <a href="#" class="category-link">
+                <img
+                  src="https://www.mypoojabox.in/cdn/shop/files/Evil_Eye_300x.png?v=1687507176"
+                  alt="category"
+                  class="category-image"
+                />
+                <p class="category-title">evil eye</p>
+              </a>
+            </li>
+            <li class="category-item swiper-slide">
+              <a href="#" class="category-link">
+                <img
+                  src="https://www.mypoojabox.in/cdn/shop/files/pooja-thali-sets_300x.png?v=1707472825"
+                  alt="category"
+                  class="category-image"
+                />
+                <p class="category-title">pooja thali</p>
+              </a>
+            </li>
+            <li class="category-item swiper-slide">
+              <a href="#" class="category-link">
+                <img
+                  src="https://www.mypoojabox.in/cdn/shop/files/DSC_5574_a4ca7ca8-4d85-4749-aef0-59fed43b9600_300x.jpg?v=1718779950"
+                  alt="category"
+                  class="category-image"
+                />
+                <p class="category-title">rose quartz</p>
+              </a>
+            </li>
+            <li class="category-item swiper-slide">
+              <a href="#" class="category-link">
+                <img
+                  src="https://www.mypoojabox.in/cdn/shop/files/urlis_300x.png?v=1672914906"
+                  alt="category"
+                  class="category-image"
+                />
+                <p class="category-title">urlis</p>
+              </a>
+            </li>
+            <li class="category-item swiper-slide">
+              <a href="#" class="category-link">
+                <img
+                  src="https://www.mypoojabox.in/cdn/shop/files/Pyrite_300x.png?v=1713260950"
+                  alt="category"
+                  class="category-image"
+                />
+                <p class="category-title">pyrite</p>
+              </a>
+            </li>
+            <li class="category-item swiper-slide">
+              <a href="#" class="category-link">
+                <img
+                  src="https://www.mypoojabox.in/cdn/shop/files/Evil_Eye_300x.png?v=1687507176"
+                  alt="category"
+                  class="category-image"
+                />
+                <p class="category-title">evil eye</p>
+              </a>
+            </li>
+            <li class="category-item swiper-slide">
+              <a href="#" class="category-link">
+                <img
+                  src="https://www.mypoojabox.in/cdn/shop/files/pooja-thali-sets_300x.png?v=1707472825"
+                  alt="category"
+                  class="category-image"
+                />
+                <p class="category-title">pooja thali</p>
+              </a>
+            </li>
+            <li class="category-item swiper-slide">
+              <a href="#" class="category-link">
+                <img
+                  src="https://www.mypoojabox.in/cdn/shop/files/DSC_5574_a4ca7ca8-4d85-4749-aef0-59fed43b9600_300x.jpg?v=1718779950"
+                  alt="category"
+                  class="category-image"
+                />
+                <p class="category-title">rose quartz</p>
+              </a>
+            </li>
+            <li class="category-item swiper-slide">
+              <a href="#" class="category-link">
+                <img
+                  src="https://www.mypoojabox.in/cdn/shop/files/urlis_300x.png?v=1672914906"
+                  alt="category"
+                  class="category-image"
+                />
+                <p class="category-title">urlis</p>
+              </a>
+            </li>
+            <li class="category-item swiper-slide">
+              <a href="#" class="category-link">
+                <img
+                  src="https://www.mypoojabox.in/cdn/shop/files/Pyrite_300x.png?v=1713260950"
+                  alt="category"
+                  class="category-image"
+                />
+                <p class="category-title">pyrite</p>
+              </a>
+            </li>
+          </ul>
+          <div class="swiper-slide-button swiper-button-prev"></div>
+          <div class="swiper-slide-button swiper-button-next"></div>
+        </div>
+
+        <!-- usp's -->
+
+        <!-- Festive Decor -->
+        <section class="usp-section">
+          <header class="usp-header">
+            <h2 class="usp-heading">
+              Festive <span class="usp-heading-sub-part">Decor</span>
+            </h2>
+            <button type="button" class="view-all-button">View All</button>
+          </header>
+          <ul class="usp-section-list">
+            <li class="usp-section-list-item usp-section-list-item-1">
+              <div class="item-image-container">
+                <img
+                  src="https://www.mypoojabox.in/cdn/shop/files/DSC08663copy_225x.jpg?v=1724322286"
+                />
+
+                <p class="discounted-price">&#8377; 3,999</p>
+              </div>
+              <h3 class="item-name">Traditional Golden Floral Urli</h3>
+              <button class="add-to-cart-button" type="button">
+                Add to Cart
+              </button>
+            </li>
+            <li class="usp-section-list-item usp-section-list-item-2">
+              <div class="item-image-container">
+                <img
+                  src="https://www.mypoojabox.in/cdn/shop/products/DSC06247copy_225x.jpg?v=1697718627"
+                />
+                <span class="offer">23% OFF</span>
+                <p class="discounted-price">
+                  <span class="orginal-price">&#8377; 1,299</span> &#8377; 999
+                </p>
+              </div>
+              <h3 class="item-name">Aesthetic Floral Urli With Diya</h3>
+              <button class="add-to-cart-button" type="button">
+                Add to Cart
+              </button>
+            </li>
+            <li class="usp-section-list-item usp-section-list-item-3">
+              <div class="item-image-container">
+                <img
+                  src="https://www.mypoojabox.in/cdn/shop/files/DSC09821copy_225x.jpg?v=1708432975"
+                />
+                <span class="offer">35% OFF</span>
+                <p class="discounted-price">
+                  <span class="orginal-price">&#8377; 1,999</span> &#8377; 1,299
+                </p>
+              </div>
+              <h3 class="item-name">Exquisite Layer Diya Urli Stand</h3>
+              <button class="add-to-cart-button" type="button">
+                Add to Cart
+              </button>
+            </li>
+            <li class="usp-section-list-item usp-section-list-item-4">
+              <div class="item-image-container">
+                <img
+                  src="https://www.mypoojabox.in/cdn/shop/products/DSC06424copy_225x.jpg?v=1670260179"
+                />
+                <span class="offer">13% OFF</span>
+                <p class="discounted-price">
+                  <span class="orginal-price">&#8377; 2,999</span> &#8377; 2,599
+                </p>
+              </div>
+              <h3 class="item-name">Handicrafted Antique Brass Fumer</h3>
+              <button class="add-to-cart-button" type="button">
+                Add to Cart
+              </button>
+            </li>
+            <li class="usp-section-list-item usp-section-list-item-5">
+              <div class="item-image-container">
+                <img
+                  src="https://www.mypoojabox.in/cdn/shop/products/DSC04199copy_225x.jpg?v=1663920043"
+                />
+                <span class="offer">23% OFF</span>
+                <p class="discounted-price">
+                  <span class="orginal-price">&#8377; 1,299</span> &#8377; 999
+                </p>
+              </div>
+              <h3 class="item-name">Astounding Lotus Diva Urli</h3>
+              <button class="add-to-cart-button" type="button">
+                Add to Cart
+              </button>
+            </li>
+          </ul>
+        </section>
+        <!-- Pooja Essentials -->
+        <section class="usp-section">
+          <header class="usp-header">
+            <h2 class="usp-heading">
+              Pooja <span class="usp-heading-sub-part">Essentials</span>
+            </h2>
+            <button type="button" class="view-all-button">View All</button>
+          </header>
+          <ul class="usp-section-list">
+            <li class="usp-section-list-item usp-section-list-item-1">
+              <div class="item-image-container">
+                <img
+                  src="https://www.mypoojabox.in/cdn/shop/products/DSC06247copy_225x.jpg?v=1697718627"
+                />
+                <span class="offer">23% OFF</span>
+                <p class="discounted-price">
+                  <span class="orginal-price">&#8377; 1,299</span> &#8377; 999
+                </p>
+              </div>
+              <h3 class="item-name">Gayatri Mantra Musical Chanting Speaker</h3>
+              <button class="add-to-cart-button" type="button">
+                Add to Cart
+              </button>
+            </li>
+            <li class="usp-section-list-item usp-section-list-item-2">
+              <div class="item-image-container">
+                <img
+                  src="https://www.mypoojabox.in/cdn/shop/files/ShreeKrishna_225x.jpg?v=1682672907"
+                />
+                <span class="offer">40% OFF</span>
+                <p class="discounted-price">
+                  <span class="orginal-price">&#8377; 999</span> &#8377; 599
+                </p>
+              </div>
+              <h3 class="item-name">
+                Hare Krishna Mantra Musical Chanting Speaker
+              </h3>
+              <button class="add-to-cart-button" type="button">
+                Add to Cart
+              </button>
+            </li>
+            <li class="usp-section-list-item usp-section-list-item-3">
+              <div class="item-image-container">
+                <img
+                  src="https://www.mypoojabox.in/cdn/shop/files/DSC02200copy_225x.jpg?v=1685007827"
+                />
+                <span class="offer">50% OFF</span>
+                <p class="discounted-price">
+                  <span class="orginal-price">&#8377; 999</span> &#8377; 499
+                </p>
+              </div>
+              <h3 class="item-name">Ek Onkar Devotional Chanting Speaker</h3>
+              <button class="add-to-cart-button" type="button">
+                Add to Cart
+              </button>
+            </li>
+            <li class="usp-section-list-item usp-section-list-item-4">
+              <div class="item-image-container">
+                <img
+                  src="https://www.mypoojabox.in/cdn/shop/files/DSC02200copy_225x.jpg?v=1685007827"
+                />
+                <span class="offer">50% OFF</span>
+                <p class="discounted-price">
+                  <span class="orginal-price">&#8377; 999</span> &#8377; 499
+                </p>
+              </div>
+              <h3 class="item-name">Sai Mantra Devotional Chanting Speaker</h3>
+              <button class="add-to-cart-button" type="button">
+                Add to Cart
+              </button>
+            </li>
+            <li class="usp-section-list-item usp-section-list-item-5">
+              <div class="item-image-container">
+                <img
+                  src="https://www.mypoojabox.in/cdn/shop/files/DSC02200copy_225x.jpg?v=1685007827"
+                />
+                <span class="offer">50% OFF</span>
+                <p class="discounted-price">
+                  <span class="orginal-price">&#8377; 999</span> &#8377; 499
+                </p>
+              </div>
+              <h3 class="item-name">
+                Gayatri Mantra Devotional Chanting Speaker
+              </h3>
+              <button class="add-to-cart-button" type="button">
+                Add to Cart
+              </button>
+            </li>
+            <li class="usp-section-list-item usp-section-list-item-6">
+              <div class="item-image-container">
+                <img
+                  src="https://www.mypoojabox.in/cdn/shop/files/DSC02200copy_225x.jpg?v=1685007827"
+                />
+                <span class="offer">50% OFF</span>
+                <p class="discounted-price">
+                  <span class="orginal-price">&#8377; 999</span> &#8377; 499
+                </p>
+              </div>
+              <h3 class="item-name">
+                Krishna Maha Devotional Chanting Speaker
+              </h3>
+              <button class="add-to-cart-button" type="button">
+                Add to Cart
+              </button>
+            </li>
+          </ul>
+        </section>
+        <!-- Healing crystals -->
+        <section class="usp-section">
+          <header class="usp-header">
+            <h2 class="usp-heading">
+              Healing <span class="usp-heading-sub-part">Crystals</span>
+            </h2>
+            <button type="button" class="view-all-button">View All</button>
+          </header>
+          <ul class="usp-section-list">
+            <li class="usp-section-list-item usp-section-list-item-1">
+              <div class="item-image-container">
+                <img
+                  src="https://www.mypoojabox.in/cdn/shop/files/DSC02248copy_225x.jpg?v=1711692921"
+                />
+                <span class="offer">29% OFF</span>
+                <p class="discounted-price">
+                  <span class="orginal-price">&#8377; 699</span> &#8377; 499
+                </p>
+              </div>
+              <h3 class="item-name">Rose Quartz Crystal Healing Bracelet</h3>
+              <button class="add-to-cart-button" type="button">
+                Add to Cart
+              </button>
+            </li>
+            <li class="usp-section-list-item usp-section-list-item-2">
+              <div class="item-image-container">
+                <img
+                  src="https://www.mypoojabox.in/cdn/shop/products/DSC_5653_d8396d94-c407-46b6-afc2-1ca55493483a_225x.jpg?v=1599141578"
+                />
+                <p class="discounted-price">&#8377; 599</p>
+              </div>
+              <h3 class="item-name">Amethyst Natural Stone Bracelet</h3>
+              <button class="add-to-cart-button" type="button">
+                Add to Cart
+              </button>
+            </li>
+            <li class="usp-section-list-item usp-section-list-item-3">
+              <div class="item-image-container">
+                <img
+                  src="https://www.mypoojabox.in/cdn/shop/files/DSC01797copy_225x.jpg?v=1723274979"
+                />
+                <p class="discounted-price">&#8377; 999</p>
+              </div>
+              <h3 class="item-name">Money Magnet Healing Crystal Bracelet</h3>
+              <button class="add-to-cart-button" type="button">
+                Add to Cart
+              </button>
+            </li>
+            <li class="usp-section-list-item usp-section-list-item-4">
+              <div class="item-image-container">
+                <img
+                  src="https://www.mypoojabox.in/cdn/shop/files/DSC01688copy_225x.jpg?v=1711459742"
+                />
+                <span class="offer">23% OFF</span>
+                <p class="discounted-price">
+                  <span class="orginal-price">&#8377; 1,299</span> &#8377; 999
+                </p>
+              </div>
+              <h3 class="item-name">9 Powerful Healing Crystals Tumbl</h3>
+              <button class="add-to-cart-button" type="button">
+                Add to Cart
+              </button>
+            </li>
+            <li class="usp-section-list-item usp-section-list-item-5">
+              <div class="item-image-container">
+                <img
+                  src="https://www.mypoojabox.in/cdn/shop/files/DSC02251copy_225x.jpg?v=1711692847"
+                />
+
+                <p class="discounted-price">&#8377; 699</p>
+              </div>
+              <h3 class="item-name">Rose Quartz Crystal Healing Bracelet</h3>
+              <button class="add-to-cart-button" type="button">
+                Add to Cart
+              </button>
+            </li>
+            <li class="usp-section-list-item usp-section-list-item-6">
+              <div class="item-image-container">
+                <img
+                  src="https://www.mypoojabox.in/cdn/shop/products/DSC_4202_0de7e9a7-a8f8-4221-8c6b-55684a3a122f_225x.jpg?v=1621511157"
+                />
+                <p class="discounted-price">&#8377; 599</p>
+              </div>
+              <h3 class="item-name">Amethyst Crystal Healing Bracelet</h3>
+              <button class="add-to-cart-button" type="button">
+                Add to Cart
+              </button>
+            </li>
+          </ul>
+        </section>
+        <!-- pooja room decor -->
+        <section class="usp-section">
+          <header class="usp-header">
+            <h2 class="usp-heading">
+              Pooja Room <span class="usp-heading-sub-part">Decor</span>
+            </h2>
+            <button type="button" class="view-all-button">View All</button>
+          </header>
+          <ul class="usp-section-list">
+            <li class="usp-section-list-item usp-section-list-item-1">
+              <div class="item-image-container">
+                <img
+                  src="https://www.mypoojabox.in/cdn/shop/files/DSC_4007-Edit_225x.jpg?v=1724322148"
+                />
+                <p class="discounted-price">&#8377; 299</p>
+              </div>
+              <h3 class="item-name">Golden Flower Bliss Brass Arti Diya</h3>
+              <button class="add-to-cart-button" type="button">
+                Add to Cart
+              </button>
+            </li>
+            <li class="usp-section-list-item usp-section-list-item-2">
+              <div class="item-image-container">
+                <img
+                  src="https://www.mypoojabox.in/cdn/shop/files/DSC_3942_copyA1_225x.jpg?v=1724322031"
+                />
+                <p class="discounted-price">&#8377; 199</p>
+              </div>
+              <h3 class="item-name">Designer Golden Arti Wooden Diya</h3>
+              <button class="add-to-cart-button" type="button">
+                Add to Cart
+              </button>
+            </li>
+            <li class="usp-section-list-item usp-section-list-item-3">
+              <div class="item-image-container">
+                <img
+                  src="https://www.mypoojabox.in/cdn/shop/files/DSC_3904-2_copy_225x.jpg?v=1724322099"
+                />
+                <p class="discounted-price">&#8377; 599</p>
+              </div>
+              <h3 class="item-name">Brass Panch Jyothi Wooden Diya</h3>
+              <button class="add-to-cart-button" type="button">
+                Add to Cart
+              </button>
+            </li>
+            <li class="usp-section-list-item usp-section-list-item-4">
+              <div class="item-image-container">
+                <img
+                  src="https://www.mypoojabox.in/cdn/shop/files/DSC_3994-Edit_225x.jpg?v=1724322206"
+                />
+                <p class="discounted-price">&#8377; 399</p>
+              </div>
+              <h3 class="item-name">Classic Brass Akhand Jyothi Diya</h3>
+              <button class="add-to-cart-button" type="button">
+                Add to Cart
+              </button>
+            </li>
+            <li class="usp-section-list-item usp-section-list-item-5">
+              <div class="item-image-container">
+                <img
+                  src="https://www.mypoojabox.in/cdn/shop/files/DSC_3962_copy_225x.jpg?v=17243223377"
+                />
+
+                <p class="discounted-price">&#8377; 599</p>
+              </div>
+              <h3 class="item-name">Panch Jyoti Long Handle Diya</h3>
+              <button class="add-to-cart-button" type="button">
+                Add to Cart
+              </button>
+            </li>
+            <li class="usp-section-list-item usp-section-list-item-6">
+              <div class="item-image-container">
+                <img
+                  src="https://www.mypoojabox.in/cdn/shop/files/DSC00126copy_225x.jpg?v=1706203422"
+                />
+                <p class="discounted-price">&#8377; 5,099</p>
+              </div>
+              <h3 class="item-name">Peacock Antique Brass Wall Bracket</h3>
+              <button class="add-to-cart-button" type="button">
+                Add to Cart
+              </button>
+            </li>
+          </ul>
+        </section>
+        <!-- Pooja Thali -->
+        <section class="usp-section">
+          <header class="usp-header">
+            <h2 class="usp-heading">
+              Pooja Thali <span class="usp-heading-sub-part">Sets</span>
+            </h2>
+            <button type="button" class="view-all-button">View All</button>
+          </header>
+          <ul class="usp-section-list">
+            <li class="usp-section-list-item usp-section-list-item-1">
+              <div class="item-image-container">
+                <img
+                  src="https://www.mypoojabox.in/cdn/shop/files/DSC03615copy_225x.jpg?v=1687301707"
+                />
+                <p class="discounted-price">&#8377; 799</p>
+              </div>
+              <h3 class="item-name">Traditional Gota Zari Pooja Thali 8"</h3>
+              <button class="add-to-cart-button" type="button">
+                Add to Cart
+              </button>
+            </li>
+            <li class="usp-section-list-item usp-section-list-item-2">
+              <div class="item-image-container">
+                <img
+                  src="https://www.mypoojabox.in/cdn/shop/files/DSC08604_copy_225x.jpg?v=1724322331"
+                />
+                <p class="discounted-price">&#8377; 7,499</p>
+              </div>
+              <h3 class="item-name">Elegant Sliver Pooja Thali Set</h3>
+              <button class="add-to-cart-button" type="button">
+                Add to Cart
+              </button>
+            </li>
+            <li class="usp-section-list-item usp-section-list-item-3">
+              <div class="item-image-container">
+                <img
+                  src="https://www.mypoojabox.in/cdn/shop/files/DSC02740copy_225x.jpg?v=1712710349"
+                />
+                <p class="discounted-price">&#8377; 4,999</p>
+              </div>
+              <h3 class="item-name">Traditional Minakari Brass Peacock</h3>
+              <button class="add-to-cart-button" type="button">
+                Add to Cart
+              </button>
+            </li>
+            <li class="usp-section-list-item usp-section-list-item-4">
+              <div class="item-image-container">
+                <img
+                  src="https://www.mypoojabox.in/cdn/shop/files/DSC08615_copy_225x.jpg?v=1724322296"
+                />
+                <p class="discounted-price">&#8377; 3,999</p>
+              </div>
+              <h3 class="item-name">Exclusive Sliver Pooja Thali Set</h3>
+              <button class="add-to-cart-button" type="button">
+                Add to Cart
+              </button>
+            </li>
+            <li class="usp-section-list-item usp-section-list-item-5">
+              <div class="item-image-container">
+                <img
+                  src="https://www.mypoojabox.in/cdn/shop/files/DSC08615_copy_225x.jpg?v=1724322296"
+                />
+
+                <p class="discounted-price">&#8377; 1,699</p>
+              </div>
+              <h3 class="item-name">Banarasi Heritage Pooja Thali Set</h3>
+              <button class="add-to-cart-button" type="button">
+                Add to Cart
+              </button>
+            </li>
+            <li class="usp-section-list-item usp-section-list-item-6">
+              <div class="item-image-container">
+                <img
+                  src="https://www.mypoojabox.in/cdn/shop/files/DSC05692_copy_225x.jpg?v=1719334826"
+                />
+                <p class="discounted-price">&#8377; 999</p>
+              </div>
+              <h3 class="item-name">Royal Zari Pooja Thali 20cm</h3>
+              <button class="add-to-cart-button" type="button">
+                Add to Cart
+              </button>
+            </li>
+          </ul>
+        </section>
+        <!-- God Idols -->
+        <section class="usp-section">
+          <header class="usp-header">
+            <h2 class="usp-heading">
+              God <span class="usp-heading-sub-part">Idols</span>
+            </h2>
+            <button type="button" class="view-all-button">View All</button>
+          </header>
+          <ul class="usp-section-list">
+            <li class="usp-section-list-item usp-section-list-item-1">
+              <div class="item-image-container">
+                <img
+                  src="https://www.mypoojabox.in/cdn/shop/files/DSC07799copy_225x.jpg?v=1695877954"
+                />
+                <p class="discounted-price">&#8377; 599</p>
+              </div>
+              <h3 class="item-name">Regal Ganesha Samrat Idol</h3>
+              <button class="add-to-cart-button" type="button">
+                Add to Cart
+              </button>
+            </li>
+            <li class="usp-section-list-item usp-section-list-item-2">
+              <div class="item-image-container">
+                <img
+                  src="https://www.mypoojabox.in/cdn/shop/files/DSC07802copy_225x.jpg?v=1724756465"
+                />
+                <p class="discounted-price">&#8377; 299</p>
+              </div>
+              <h3 class="item-name">Adiyogi Shiva Statue</h3>
+              <button class="add-to-cart-button" type="button">
+                Add to Cart
+              </button>
+            </li>
+            <li class="usp-section-list-item usp-section-list-item-3">
+              <div class="item-image-container">
+                <img
+                  src="https://www.mypoojabox.in/cdn/shop/files/DSC07760copy_225x.jpg?v=1695878029"
+                />
+                <p class="discounted-price">&#8377; 599</p>
+              </div>
+              <h3 class="item-name">Saraswati Maa Vidya Devi Idol</h3>
+              <button class="add-to-cart-button" type="button">
+                Add to Cart
+              </button>
+            </li>
+            <li class="usp-section-list-item usp-section-list-item-4">
+              <div class="item-image-container">
+                <img
+                  src="https://www.mypoojabox.in/cdn/shop/files/DSC07753copy_37fb861f-5a46-4403-ba47-1e5a19be7133_225x.jpg?v=1695877929"
+                />
+                <p class="discounted-price">&#8377; 599</p>
+              </div>
+              <h3 class="item-name">Vighnaharta Ganesha Idol</h3>
+              <button class="add-to-cart-button" type="button">
+                Add to Cart
+              </button>
+            </li>
+            <li class="usp-section-list-item usp-section-list-item-5">
+              <div class="item-image-container">
+                <img
+                  src="https://www.mypoojabox.in/cdn/shop/files/jjjj_225x.jpg?v=1695877992"
+                />
+
+                <p class="discounted-price">&#8377; 599</p>
+              </div>
+              <h3 class="item-name">Makhan Chore Krishna Idol</h3>
+              <button class="add-to-cart-button" type="button">
+                Add to Cart
+              </button>
+            </li>
+            <li class="usp-section-list-item usp-section-list-item-6">
+              <div class="item-image-container">
+                <img
+                  src="https://www.mypoojabox.in/cdn/shop/files/DSC07771copy_225x.jpg?v=1695877990"
+                />
+                <p class="discounted-price">&#8377; 599</p>
+              </div>
+              <h3 class="item-name">Shakti Roop Durga Mata Idol</h3>
+              <button class="add-to-cart-button" type="button">
+                Add to Cart
+              </button>
+            </li>
+          </ul>
+        </section>
+        <!-- Evil Eye -->
+        <section class="usp-section">
+          <header class="usp-header">
+            <h2 class="usp-heading">
+              Evil <span class="usp-heading-sub-part">Eye</span>
+            </h2>
+            <button type="button" class="view-all-button">View All</button>
+          </header>
+          <ul class="usp-section-list">
+            <li class="usp-section-list-item usp-section-list-item-1">
+              <div class="item-image-container">
+                <img
+                  src="https://www.mypoojabox.in/cdn/shop/products/evil-eye-dream-catcher-for-positive-energy-and-protection-large-wall-hanging-434_225x.jpg?v=1625059937"
+                />
+                <span class="offer">29% Off</span>
+                <p class="discounted-price">
+                  <span class="orginal-price">&#8377; 699</span>&#8377; 499
+                </p>
+              </div>
+              <h3 class="item-name">Evil Eye Dream Catcher</h3>
+              <button class="add-to-cart-button" type="button">
+                Add to Cart
+              </button>
+            </li>
+            <li class="usp-section-list-item usp-section-list-item-2">
+              <div class="item-image-container">
+                <img
+                  src="https://www.mypoojabox.in/cdn/shop/files/DSC00680copy_225x.jpg?v=1707883023"
+                />
+                <span class="offer">29% Off</span>
+                <p class="discounted-price">
+                  <span class="orginal-price">&#8377; 699</span>&#8377; 499
+                </p>
+              </div>
+              <h3 class="item-name">Feng Shui Bluw Evil Eye Hanging</h3>
+              <button class="add-to-cart-button" type="button">
+                Add to Cart
+              </button>
+            </li>
+            <li class="usp-section-list-item usp-section-list-item-3">
+              <div class="item-image-container">
+                <img
+                  src="https://www.mypoojabox.in/cdn/shop/products/DSC06896copy_225x.jpg?v=1671119335"
+                />
+                <p class="discounted-price">&#8377; 699</p>
+              </div>
+              <h3 class="item-name">Horse Shoe Good Luck Feng Shui</h3>
+              <button class="add-to-cart-button" type="button">
+                Add to Cart
+              </button>
+            </li>
+            <li class="usp-section-list-item usp-section-list-item-4">
+              <div class="item-image-container">
+                <img
+                  src="https://www.mypoojabox.in/cdn/shop/products/DSC06818copy_225x.jpg?v=1671005904"
+                />
+
+                <p class="discounted-price">&#8377; 699</p>
+              </div>
+              <h3 class="item-name">Evil Eye Horse Wall Hanging</h3>
+              <button class="add-to-cart-button" type="button">
+                Add to Cart
+              </button>
+            </li>
+            <li class="usp-section-list-item usp-section-list-item-5">
+              <div class="item-image-container">
+                <img
+                  src="https://www.mypoojabox.in/cdn/shop/products/DSC09023copy_225x.jpg?v=1677657211"
+                />
+
+                <p class="discounted-price">&#8377; 999</p>
+              </div>
+              <h3 class="item-name">Hand-Painted Big Evil Eye Dream Catcher</h3>
+              <button class="add-to-cart-button" type="button">
+                Add to Cart
+              </button>
+            </li>
+            <li class="usp-section-list-item usp-section-list-item-6">
+              <div class="item-image-container">
+                <img
+                  src="https://www.mypoojabox.in/cdn/shop/products/DSC09017copy_225x.jpg?v=1677657213"
+                />
+
+                <p class="discounted-price">&#8377; 999</p>
+              </div>
+              <h3 class="item-name">Hand-Painted Evil Eye Gold Wall</h3>
+              <button class="add-to-cart-button" type="button">
+                Add to Cart
+              </button>
+            </li>
+          </ul>
+        </section>
+        <!-- Salt Lamps -->
+        <section class="usp-section">
+          <header class="usp-header">
+            <h2 class="usp-heading">
+              Salt <span class="usp-heading-sub-part">Lamps</span>
+            </h2>
+            <button type="button" class="view-all-button">View All</button>
+          </header>
+          <ul class="usp-section-list">
+            <li class="usp-section-list-item usp-section-list-item-1">
+              <div class="item-image-container">
+                <img
+                  src="https://www.mypoojabox.in/cdn/shop/files/DSC00972copy_225x.jpg?v=1712756637"
+                />
+                <span class="offer">23% Off</span>
+                <p class="discounted-price">
+                  <span class="orginal-price">&#8377; 1,299</span>&#8377; 999
+                </p>
+              </div>
+              <h3 class="item-name">Natural Plug-In Himalayan Salt Lamp</h3>
+              <button class="add-to-cart-button" type="button">
+                Add to Cart
+              </button>
+            </li>
+            <li class="usp-section-list-item usp-section-list-item-2">
+              <div class="item-image-container">
+                <img
+                  src="https://www.mypoojabox.in/cdn/shop/files/DSC00972copy_225x.jpg?v=1712756637"
+                />
+
+                <p class="discounted-price">&#8377; 1,599</p>
+              </div>
+              <h3 class="item-name">
+                Floral Design Plug-In Himalayan Salt Lamp
+              </h3>
+              <button class="add-to-cart-button" type="button">
+                Add to Cart
+              </button>
+            </li>
+            <li class="usp-section-list-item usp-section-list-item-3">
+              <div class="item-image-container">
+                <img
+                  src="https://www.mypoojabox.in/cdn/shop/files/DSC00991copy_225x.jpg?v=1682672901"
+                />
+                <p class="discounted-price">&#8377; 1,299</p>
+              </div>
+              <h3 class="item-name">
+                Anahata Design Plug In Himalayan Salt Lamp
+              </h3>
+              <button class="add-to-cart-button" type="button">
+                Add to Cart
+              </button>
+            </li>
+            <li class="usp-section-list-item usp-section-list-item-4">
+              <div class="item-image-container">
+                <img
+                  src="https://www.mypoojabox.in/cdn/shop/products/IMG_0255_225x.jpg?v=1652689702"
+                />
+
+                <p class="discounted-price">&#8377; 2,499</p>
+              </div>
+              <h3 class="item-name">Himalayan Pink Salt Crescent Moon</h3>
+              <button class="add-to-cart-button" type="button">
+                Add to Cart
+              </button>
+            </li>
+            <li class="usp-section-list-item usp-section-list-item-5">
+              <div class="item-image-container">
+                <img
+                  src="https://www.mypoojabox.in/cdn/shop/products/IMG_0300_225x.jpg?v=1652709059"
+                />
+
+                <p class="discounted-price">&#8377; 2,399</p>
+              </div>
+              <h3 class="item-name">Himalayan Pink Salt Cylindrical</h3>
+              <button class="add-to-cart-button" type="button">
+                Add to Cart
+              </button>
+            </li>
+            <li class="usp-section-list-item usp-section-list-item-6">
+              <div class="item-image-container">
+                <img
+                  src="https://www.mypoojabox.in/cdn/shop/products/IMG_0252_225x.jpg?v=1652708980"
+                />
+
+                <p class="discounted-price">&#8377; 2,499</p>
+              </div>
+              <h3 class="item-name">Himalayan Pink Salt Pyramid</h3>
+              <button class="add-to-cart-button" type="button">
+                Add to Cart
+              </button>
+            </li>
+          </ul>
+        </section>
+        <!-- Urlis -->
+        <section class="usp-section">
+          <header class="usp-header">
+            <h2 class="usp-heading">
+              <span class="usp-heading-sub-part">Urlis</span>
+            </h2>
+            <button type="button" class="view-all-button">View All</button>
+          </header>
+          <ul class="usp-section-list">
+            <li class="usp-section-list-item usp-section-list-item-1">
+              <div class="item-image-container">
+                <img
+                  src="https://www.mypoojabox.in/cdn/shop/products/DSC06247copy_225x.jpg?v=1697718627"
+                />
+                <span class="offer">23% Off</span>
+                <p class="discounted-price">
+                  <span class="orginal-price">&#8377; 1,299</span>&#8377; 999
+                </p>
+              </div>
+              <h3 class="item-name">Aesthetic Floral Urli With Diya</h3>
+              <button class="add-to-cart-button" type="button">
+                Add to Cart
+              </button>
+            </li>
+            <li class="usp-section-list-item usp-section-list-item-2">
+              <div class="item-image-container">
+                <img
+                  src="https://www.mypoojabox.in/cdn/shop/products/DSC_5258_1_225x.jpg?v=1622486259"
+                />
+                <span class="offer">29% Off</span>
+                <p class="discounted-price">
+                  <span class="orginal-price">&#8377; 1,399</span>&#8377; 999
+                </p>
+              </div>
+              <h3 class="item-name">Captivating Petal Urli/Floater</h3>
+              <button class="add-to-cart-button" type="button">
+                Add to Cart
+              </button>
+            </li>
+            <li class="usp-section-list-item usp-section-list-item-3">
+              <div class="item-image-container">
+                <img
+                  src="https://www.mypoojabox.in/cdn/shop/files/DSC09821copy_225x.jpg?v=1708432975"
+                />
+                <span class="offer">35% Off</span>
+                <p class="discounted-price">
+                  <span class="orginal-price">&#8377; 1,999</span>&#8377; 1,299
+                </p>
+              </div>
+              <h3 class="item-name">Exquisite Layer Diya Urli Stand</h3>
+              <button class="add-to-cart-button" type="button">
+                Add to Cart
+              </button>
+            </li>
+            <li class="usp-section-list-item usp-section-list-item-4">
+              <div class="item-image-container">
+                <img
+                  src="https://www.mypoojabox.in/cdn/shop/products/DSC_5342_6a2f826b-e9ea-4939-841f-a599285c89aa_225x.jpg?v=1603267424"
+                />
+                <span class="offer">43% Off</span>
+                <p class="discounted-price">
+                  <span class="orginal-price">&#8377; 2,299</span>&#8377; 1,299
+                </p>
+              </div>
+              <h3 class="item-name">Decorative Scallop Golden Urli</h3>
+              <button class="add-to-cart-button" type="button">
+                Add to Cart
+              </button>
+            </li>
+            <li class="usp-section-list-item usp-section-list-item-5">
+              <div class="item-image-container">
+                <img
+                  src="https://www.mypoojabox.in/cdn/shop/products/DSC04199copy_225x.jpg?v=1663920043"
+                />
+                <span class="offer">23% Off</span>
+                <p class="discounted-price">
+                  <span class="orginal-price">&#8377; 1,299</span>&#8377; 999
+                </p>
+              </div>
+              <h3 class="item-name">Astounding Lotus Diya Urli</h3>
+              <button class="add-to-cart-button" type="button">
+                Add to Cart
+              </button>
+            </li>
+            <li class="usp-section-list-item usp-section-list-item-6">
+              <div class="item-image-container">
+                <img
+                  src="https://www.mypoojabox.in/cdn/shop/files/DSC03622copy_225x.jpg?v=1726048386"
+                />
+
+                <p class="discounted-price">&#8377; 1,699</p>
+              </div>
+              <h3 class="item-name">Ambra Urli</h3>
+              <button class="add-to-cart-button" type="button">
+                Add to Cart
+              </button>
+            </li>
+          </ul>
+        </section>
+        <!-- create review section -->
+        <div class="create-review-container">
+          <div>
+            <div class="rating-container">
+              <span>4.1</span>
+              <div class="stars">
+                <i class="fa-solid fa-star star-icon"></i>
+                <i class="fa-solid fa-star star-icon"></i>
+                <i class="fa-solid fa-star star-icon"></i>
+                <i class="fa-solid fa-star star-icon"></i>
+                <i class="fa-solid fa-star star-icon"></i>
+              </div>
+            </div>
+            <p class="reviews-count">1,702 reviews</p>
+          </div>
+          <button type="button" class="write-review-button">
+            Write a review
+          </button>
+        </div>
+        <!-- reviews section -->
+        <section class="reviews-section swiper">
+          <div class="reviews swiper-wrapper">
+            <div class="review swiper-slide">
+              <header class="review-header">
+                <div class="profile-bg-container">
+                  <span>N B</span>
+                </div>
+                <div class="profile-details">
+                  <p class="profile-name">Nidhi Batia</p>
+                  <div class="stars-and-timestamp-wrapper">
+                    <div class="stars">
+                      <i class="fa-solid fa-star star-icon"></i>
+                      <i class="fa-solid fa-star star-icon"></i>
+                      <i class="fa-solid fa-star star-icon"></i>
+                      <i class="fa-solid fa-star star-icon"></i>
+                      <i class="fa-solid fa-star star-icon"></i>
+                    </div>
+                    <p class="review-timestamp">3 months ago</p>
+                  </div>
+                </div>
+              </header>
+              <p class="review-content">
+                Loved the quality of the product I received
+              </p>
+            </div>
+            <div class="review swiper-slide">
+              <header class="review-header">
+                <div class="profile-bg-container">
+                  <span>R G</span>
+                </div>
+                <div class="profile-details">
+                  <p class="profile-name">Ramakrishna Garlapati</p>
+                  <div class="stars-and-timestamp-wrapper">
+                    <div class="stars">
+                      <i class="fa-solid fa-star star-icon"></i>
+                      <i class="fa-solid fa-star star-icon"></i>
+                      <i class="fa-solid fa-star star-icon"></i>
+                      <i class="fa-solid fa-star star-icon"></i>
+                      <i class="fa-solid fa-star star-icon"></i>
+                    </div>
+                    <p class="review-timestamp">1 months ago</p>
+                  </div>
+                </div>
+              </header>
+              <p class="review-content">It feels so postive. worth it.</p>
+            </div>
+            <div class="review swiper-slide">
+              <header class="review-header">
+                <div class="profile-bg-container">
+                  <span>Y K</span>
+                </div>
+                <div class="profile-details">
+                  <p class="profile-name">Yash Kanna</p>
+                  <div class="stars-and-timestamp-wrapper">
+                    <div class="stars">
+                      <i class="fa-solid fa-star star-icon"></i>
+                      <i class="fa-solid fa-star star-icon"></i>
+                      <i class="fa-solid fa-star star-icon"></i>
+                      <i class="fa-solid fa-star star-icon"></i>
+                      <i class="fa-solid fa-star star-icon"></i>
+                    </div>
+                    <p class="review-timestamp">2 months ago</p>
+                  </div>
+                </div>
+              </header>
+              <p class="review-content">Great Product!</p>
+            </div>
+            <div class="review swiper-slide">
+              <header class="review-header">
+                <div class="profile-bg-container">
+                  <span>N B</span>
+                </div>
+                <div class="profile-details">
+                  <p class="profile-name">Nidhi Batia</p>
+                  <div class="stars-and-timestamp-wrapper">
+                    <div class="stars">
+                      <i class="fa-solid fa-star star-icon"></i>
+                      <i class="fa-solid fa-star star-icon"></i>
+                      <i class="fa-solid fa-star star-icon"></i>
+                      <i class="fa-solid fa-star star-icon"></i>
+                      <i class="fa-solid fa-star star-icon"></i>
+                    </div>
+                    <p class="review-timestamp">3 months ago</p>
+                  </div>
+                </div>
+              </header>
+              <p class="review-content">
+                Loved the quality of the product I received
+              </p>
+            </div>
+            <div class="review swiper-slide">
+              <header class="review-header">
+                <div class="profile-bg-container">
+                  <span>N B</span>
+                </div>
+                <div class="profile-details">
+                  <p class="profile-name">Nidhi Batia</p>
+                  <div class="stars-and-timestamp-wrapper">
+                    <div class="stars">
+                      <i class="fa-solid fa-star star-icon"></i>
+                      <i class="fa-solid fa-star star-icon"></i>
+                      <i class="fa-solid fa-star star-icon"></i>
+                      <i class="fa-solid fa-star star-icon"></i>
+                      <i class="fa-solid fa-star star-icon"></i>
+                    </div>
+                    <p class="review-timestamp">3 months ago</p>
+                  </div>
+                </div>
+              </header>
+              <p class="review-content">
+                Loved the quality of the product I received
+              </p>
+            </div>
+            <div class="review swiper-slide">
+              <header class="review-header">
+                <div class="profile-bg-container">
+                  <span>N B</span>
+                </div>
+                <div class="profile-details">
+                  <p class="profile-name">Nidhi Batia</p>
+                  <div class="stars-and-timestamp-wrapper">
+                    <div class="stars">
+                      <i class="fa-solid fa-star star-icon"></i>
+                      <i class="fa-solid fa-star star-icon"></i>
+                      <i class="fa-solid fa-star star-icon"></i>
+                      <i class="fa-solid fa-star star-icon"></i>
+                      <i class="fa-solid fa-star star-icon"></i>
+                    </div>
+                    <p class="review-timestamp">3 months ago</p>
+                  </div>
+                </div>
+              </header>
+              <p class="review-content">
+                Loved the quality of the product I received
+              </p>
+            </div>
+            <div class="review swiper-slide">
+              <header class="review-header">
+                <div class="profile-bg-container">
+                  <span>N B</span>
+                </div>
+                <div class="profile-details">
+                  <p class="profile-name">Nidhi Batia</p>
+                  <div class="stars-and-timestamp-wrapper">
+                    <div class="stars">
+                      <i class="fa-solid fa-star star-icon"></i>
+                      <i class="fa-solid fa-star star-icon"></i>
+                      <i class="fa-solid fa-star star-icon"></i>
+                      <i class="fa-solid fa-star star-icon"></i>
+                      <i class="fa-solid fa-star star-icon"></i>
+                    </div>
+                    <p class="review-timestamp">3 months ago</p>
+                  </div>
+                </div>
+              </header>
+              <p class="review-content">
+                Loved the quality of the product I received
+              </p>
+            </div>
+            <div class="review swiper-slide">
+              <header class="review-header">
+                <div class="profile-bg-container">
+                  <span>N B</span>
+                </div>
+                <div class="profile-details">
+                  <p class="profile-name">Nidhi Batia</p>
+                  <div class="stars-and-timestamp-wrapper">
+                    <div class="stars">
+                      <i class="fa-solid fa-star star-icon"></i>
+                      <i class="fa-solid fa-star star-icon"></i>
+                      <i class="fa-solid fa-star star-icon"></i>
+                      <i class="fa-solid fa-star star-icon"></i>
+                      <i class="fa-solid fa-star star-icon"></i>
+                    </div>
+                    <p class="review-timestamp">3 months ago</p>
+                  </div>
+                </div>
+              </header>
+              <p class="review-content">
+                Loved the quality of the product I received
+              </p>
+            </div>
+            <div class="review swiper-slide">
+              <header class="review-header">
+                <div class="profile-bg-container">
+                  <span>N B</span>
+                </div>
+                <div class="profile-details">
+                  <p class="profile-name">Nidhi Batia</p>
+                  <div class="stars-and-timestamp-wrapper">
+                    <div class="stars">
+                      <i class="fa-solid fa-star star-icon"></i>
+                      <i class="fa-solid fa-star star-icon"></i>
+                      <i class="fa-solid fa-star star-icon"></i>
+                      <i class="fa-solid fa-star star-icon"></i>
+                      <i class="fa-solid fa-star star-icon"></i>
+                    </div>
+                    <p class="review-timestamp">3 months ago</p>
+                  </div>
+                </div>
+              </header>
+              <p class="review-content">
+                Loved the quality of the product I received
+              </p>
+            </div>
+          </div>
+          <div class="swiper-button-next swiper-nav-button"></div>
+          <div class="swiper-button-prev swiper-nav-button"></div>
+          <div class="swiper-pagination"></div>
+        </section>
+        <!-- company info section -->
+        <section class="company-info-section">
+          <h2 class="company-info-heading">
+            My Pooja Box - A One-stop Festive Decor & Gifting Shop
+          </h2>
+          <p class="company-info-half" id="companyInfo1">
+            Being a one-stop pooja samagri online store in India, My Pooja Box
+            bridges the gap between devotees and devotion. We have sorted all
+            your devotional needs by putting forth a wide assortment of products
+            by making it easier for you buy pooja items on...
+          </p>
+          <p class="company-info-full hidden" id="companyInfo2">
+            Being a one-stop pooja samagri online store in India, My Pooja Box
+            bridges the gap between devotees and devotion. We have sorted all
+            your devotional needs by putting forth a wide assortment of products
+            by making it easier for you buy pooja items online. Hindu religion
+            is a potpourri of traditions and ceremonies. Each religious occasion
+            demands for special items as per the rituals. The concept of My
+            Pooja Box revolves around bringing every required product on a
+            single platform. We help you buy pooja items online in India.
+            Decorative pooja thalis, dhoop, hawan samagri, god’s idols etc., we
+            have a wide line-up of products to choose from. The idols and thalis
+            will give you a glimpse of incredible Indian craftsmanship. Don’t
+            worry if you need a pooja mandir for home to install the figurines
+            of Gods and Goddesses. My Pooja Box has a wide variety of temples in
+            brass and wooden materials and other pooja samagri store as well.
+            Our range also includes home decor gift items oozing with
+            traditional charm and modern aesthetics. Beautiful tea light scented
+            candles, lanterns, wall hangings, showpieces, and more, choose from
+            a wide list! Those looking for feng shui products also need not go
+            anywhere else. Our assorted collection brings you laughing buddha
+            figurines, tortoise statues, coin trees, owl figurines, and more in
+            just a few clicks. We even possess all your Christmas and Christmas
+            tree decorations, that you require to get with the festive vibes!
+            So, buy havan samagri dhoop, puja store online right from the
+            comfort of your couch to fulfil your religious needs. Worshipping
+            your deity with pure pooja items online offers eternal peace and
+            joy. Hymn the name of your revered god is main path to spirituality.
+            Pooja is an integral a part of Hindu culture and throughout the
+            year, we tend to celebrate the pooja of various Hindu gods and
+            goddesses. It is the only way to connect yourself to your inner soul
+            and at the same time connect yourself to the god and gurus. It
+            entails the use of various numbers of materials. Varied spiritual
+            and religious accessories embellish the mind with clean thoughts.
+            Several foremost vital Pooja items online embody god and god idols,
+            diyas, garland, mukut, sculptures, camphor, puja thali, chandan,
+            haldi, kumkum, bell, and many others. The other religious or puja
+            items like Rudrakshas, Panchpatra, Saligrama, dry fruits, and flower
+            help make feel spiritually. Akshat is unbroken rice grains that are
+            offered to god so as to achieve wealth and prosperity. They are
+            offered to the deities while chanting. Bhasma or vibhuthi protects
+            the user from health problem and evil by purifying him or her. Pooja
+            samagri online shopping of incense sticks facilitate to create
+            ambiance for spiritual forces in and around us. Ever since time
+            immortal, incense has been accustomed kindle moods. The divine
+            fragrance that are pervaded by dhoop incense sticks calm the mind
+            and carry the spirits and enlivens the environment. Indians are very
+            spiritual and traditional. We believe in many gods and goddesses,
+            believing them to bless us with a good life and prosperity. Buy &
+            Send Gifts Online Everyone loves to be cared for, pampered and made
+            feel special on birthdays, anniversaries, or festive occasions. Send
+            gifts online and spread the warmth of love to dear ones living in
+            India or across the world and make the gifting experience
+            unforgettable. Understanding the importance of every moment in your
+            life, MyPoojaBox customizes the best of the traditional gifts for
+            Indian festivals, anniversary gifts for parents, birthday gifts for
+            mothers and so much more. Home Decor Feeling like your home has lost
+            its luster? Redefine your home decor with our beautiful, rustic, and
+            vintage yet contemporary collection of cherry-picked home decor
+            items. Be it lovely Bandhanwars, Urli, Himalayan salt lamps,
+            tableware, or even Buddha water fountain, each decorative accessory
+            blends with the beauty of your living space and speaks up a
+            fairy-tale like ambiance. Pair these items with vibrant colored
+            flowers & add up the ethereal charm to the home. Navratri Indian
+            festivals are all about celebration, joy amazement, and fun.
+            Navratri is one of them that comes with beautifully decorated Maa
+            Durga Idols, and Navratri decoration items. Adhere to the widest
+            collection of Navratri Puja Samagri & Maa Durga Idols with exquisite
+            detailing that make Navratri a little more memorable. Raksha Bandhan
+            Raksha Bandhan is a festival that celebrates the sacred bond between
+            brothers and sisters. Celebrated on Shravana Purnima (Full Moon of
+            the Shravana month) every year, this festival holds a special place
+            in Hindu tradition. To celebrate this festival, sisters tie thread
+            around their brothers’ wrists and vow to protect them for a
+            lifetime. As a sweet gesture, brothers pamper their sisters with
+            gifts and other goodies. Raksha Bandhan is going to fall on August
+            11th (Thursday), this year. At MyPoojaBox, we have something special
+            coming up to make this bond even special both for brothers and
+            sisters. If you stay far away from your brother and you want to send
+            him a rakhi on this special occasion, then you have come to the
+            right place. We offer online Rakhi delivery throughout the country
+            and not just India, but you can also send rakhi online to the USA,
+            Canada, and the UK through My Pooja Box. Whether it’s a designer
+            rakhi, a silver rakhi, or a sparkling crystals rakhi, we have got it
+            all covered. Dear brothers, you don’t need to worry, we have a huge
+            gifting section for you to choose from. Choose a rakhi gift as per
+            your sister’s liking and we’ll get it delivered for her! JANMASHTAMI
+            The enchanting music of the flute played by Krishna is symbolic of
+            divinity. Janmashtami, the birthday of Lord Krishna is celebrated
+            with great devotion and enthusiasm in India. According to the Hindu
+            calendar this religious festival is celebrated on the Ashtami of
+            Krishna Paksh or the 8th day of the dark fortnight in the month of
+            Bhadon i.e 18th August’2022 this year. The actual celebration of
+            Janmashtami takes place during the midnight as Sri Krishna is
+            believed to be born on a dark, stormy and windy night to end the
+            rule and violence of his uncle, Kansa. All over India this day is
+            celebrated with devotional songs and dances, pujas, arti, blowing of
+            the Conch and rocking the cradle of baby Sri Krishna. Our range of
+            products diversify from Krishna poshaks with elaborate designs of
+            gota patti and beads, laddu gopal jhula and much more, laddu gopal
+            singhasan, his bedding on which he sleeps, Krishna special chowki on
+            which he resides and looks out for everyone, his divine flute and
+            much more. GANESH CHATURTHI Ganesh Chaturthi is celebrated as birth
+            anniversary of Lord Ganesh. On Ganesh Chaturthi, Lord Ganesh is
+            worshipped as the god of wisdom, prosperity and good fortune. It is
+            believed that Lord Ganesh was born during Shukla Paksha of
+            Bhadrapada month. Currently Ganesh Chaturthi day falls in month of
+            Aug i.e. 31st Aug’2022 in English calendar. Lord Ganesha is the most
+            revered and loved of all. Commonly associated with the conventional
+            symbols of Hinduism, his father is the Hindu deity named Shiva. He
+            is the destroyer in the Holy Trinity of Gods while Goddess Parvati,
+            his beloved wife, is one of the many incarnations of Goddess Shakti.
+            Among the many brass pooja items online, it is specifically advised
+            to bring a beautiful and perfectly finished idol or statue of “Eco
+            friendly Ganesha” at home. We have a collection of stunning
+            eco-friendly Ganesha idols that have been made using 100% natural
+            and organic materials. Afterall, as citizens of India, it is our
+            responsibility to ensure the wellbeing of the environment. The
+            symbolic figurine of Lord Ganesha consists of an elephant’s head
+            from which comes out a curved trunk. He also has big ears on a big
+            human body. His favorite offering is the famous round Indian
+            sweetmeat known as Laddu and the mouse his closely chosen vehicle.
+            The Ganeshotsav, the festivity of Ganesh Chaturthi, ends after 10
+            days on Anant Chaturdashi which is also known as Ganesh Visarjan
+            day. On Anant Chaturdashi, devotees immerse idol of Lord Ganesh in
+            water body or flower pots of their house after a gala street
+            procession. KARWA CHAUTH Karwa Chauth, one of many Hindu festivals,
+            is a fasting ritual observed by all married Hindu women who seek the
+            longevity, prosperity and well-being of their husbands. This
+            festival is very popular amongst married Hindu women in the western
+            and northern parts of India, primarily in Punjab, Rajasthan,
+            Haryana, Gujarat, and Uttar Pradesh. During the Karwa Chauth
+            festival, married Hindu women dedicate the day to their husbands.
+            Normally, women who observe this festival are called "Saubhagyavati"
+            meaning "joyous and happy status of wifehood." The festival was
+            emerged also as a day for celebrating autumn. Hindu married women
+            enjoy the company and companionship of relatives and friends. As of
+            recently, the celebration has been given a more religious touch.
+            Karwa chauth is a very important as well as a difficult fast that
+            all married Hindu women observe. The festival begins just before
+            sunrise and ends after worshiping the moon and doing prayers at
+            night. No water or food can be consumed once the sun rises. The fast
+            is only broken after seeing the moon and after all rituals of that
+            day have been performed. When the moon has appeared, women break the
+            fast after they have offered water to the moon with a fancy karwa
+            chauth thali, channi, lota and bangle designed specially for this
+            occasion to break their fast. Women dress in special clothes during
+            this festival. A pink or red sari with a gold woven pattern is worn
+            by many women as part their custom and is worn only in the evening.
+            New brides will wear their wedding costumes. The karwa chauth fast
+            sets a merry tone of frolic and fun, feasting and festivity and is
+            amongst the biggest festivals celebrated by Hindus. DIWALI Nearly a
+            billion people worldwide participate in the Diwali celebration and
+            almost a dozen countries officially recognize it as an official
+            holiday. Dozens of cities across the United States, Canada,
+            Australia, and the UK also have significant celebrations, dazzling
+            both religious observers and casual passers. Despite the holiday’s
+            increasingly global reach, many unfamiliar with the holiday are
+            still unsure of its origins and significance. Diwali’s cultural
+            travel has allowed it to reach people from various national and
+            linguistic backgrounds. As a result of Indian migration, people in
+            nations as different as Singapore and Trinidad and Tobago celebrate
+            the holiday. They observe its rituals, and share in its rich
+            traditions, this year this celebration is on 24th October 2022.
+            Diwali is considered to be the most auspicious festival especially
+            in India, people worship Ganesh Laxmi idols and lit up their homes
+            with numerous diyas and candles and kids make Rangoli outside their
+            main door entrance etc. My pooja box has luxurious Diwali box
+            consisting of gold ganesh and laxmi idols pooja essentials like
+            thali, roli chawal platter etc and other brass products to decorate
+            your house.
+          </p>
+          <div class="read-buttons-wrapper">
+            <button class="read-more-button read-button" id="readMoreButton">
+              read more
+            </button>
+            <button
+              class="read-less-button read-button hidden"
+              id="readLessButton"
+            >
+              read less
+            </button>
+          </div>
+        </section>
+        <!-- customer benifits section -->
+        <section class="customer-benifits">
+          <div class="customer-benifit-container">
+            <img
+              src="./images/speedy-delivery.svg"
+              alt="speedy delivery"
+              class="customer-benifit-image"
+            />
+            <p class="customer-benifit-type">Speedy delivery</p>
+          </div>
+          <div class="customer-benifit-container">
+            <img
+              src="./images/cash-on-delivery.svg"
+              alt="cash on delivery"
+              class="customer-benifit-image"
+            />
+            <p class="customer-benifit-type">Cash on delivery</p>
+          </div>
+          <div class="customer-benifit-container">
+            <img
+              src="./images/returns.svg"
+              alt="Easy returns"
+              class="customer-benifit-image"
+            />
+            <p class="customer-benifit-type">Easy returns</p>
+          </div>
+        </section>
+      </main>
+
+      <!-- foooter -->
+      <footer class="footer">
+        <div class="footer-top" id="footerNavGroup">
+          <section>
+            <img
+              src="/images/footer-logo-white.svg"
+              alt="logo"
+              class="footer-logo"
+            />
+            <div class="social-media-buttons-wrapper">
+              <button type="button" class="social-media-button">
+                <i class="fa-brands fa-facebook-f"></i>
+                <span>Facebook</span>
+              </button>
+              <button type="button" class="social-media-button">
+                <i class="fa-brands fa-instagram"></i>
+                <span>Instagram</span>
+              </button>
+            </div>
+          </section>
+          <section class="footer-nav">
+            <header class="footer-nav-header">
+              <p class="footer-nav-title">Information</p>
+              <div class="arrow-buttons-wrapper">
+                <button
+                  class="arrow-button arrow-down-button active"
+                  id="arrowDown"
+                >
+                  <span class="material-symbols-outlined">
+                    keyboard_arrow_down
+                  </span>
+                </button>
+                <button class="arrow-button arrow-up-button" id="arrowUp">
+                  <span class="material-symbols-outlined">
+                    keyboard_arrow_up
+                  </span>
+                </button>
+              </div>
+            </header>
+            <div class="footer-nav-expand hidden">
+              <ul class="footer-nav-list">
+                <li class="footer-nav-item">
+                  <a href="#" class="footer-nav-link">Track your Order</a>
+                </li>
+                <li class="footer-nav-item">
+                  <a href="#" class="footer-nav-link">Returns and Refunds</a>
+                </li>
+                <li class="footer-nav-item">
+                  <a href="#" class="footer-nav-link">Holiday List</a>
+                </li>
+                <li class="footer-nav-item">
+                  <a href="#" class="footer-nav-link">Trems & conditions</a>
+                </li>
+                <li class="footer-nav-item">
+                  <a href="#" class="footer-nav-link">Aartis</a>
+                </li>
+                <li class="footer-nav-item">
+                  <a href="#" class="footer-nav-link">Privacy Policy</a>
+                </li>
+                <li class="footer-nav-item">
+                  <a href="#" class="footer-nav-link">Blog</a>
+                </li>
+                <li class="footer-nav-item">
+                  <a href="#" class="footer-nav-link">FAQ</a>
+                </li>
+                <li class="footer-nav-item">
+                  <a href="#" class="footer-nav-link">Deals & Coupons</a>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section class="footer-nav">
+            <header class="footer-nav-header">
+              <p class="footer-nav-title">About my pooja box</p>
+              <div class="arrow-buttons-wrapper">
+                <button
+                  class="arrow-button arrow-down-button active"
+                  id="arrowDown"
+                >
+                  <span class="material-symbols-outlined">
+                    keyboard_arrow_down
+                  </span>
+                </button>
+                <button class="arrow-button arrow-up-button" id="arrowUp">
+                  <span class="material-symbols-outlined">
+                    keyboard_arrow_up
+                  </span>
+                </button>
+              </div>
+            </header>
+            <div class="footer-nav-expand hidden">
+              <ul class="footer-nav-list">
+                <li class="footer-nav-item">
+                  <a href="#" class="footer-nav-link">Contact Us</a>
+                </li>
+                <li class="footer-nav-item">
+                  <a href="#" class="footer-nav-link">About Us</a>
+                </li>
+                <li class="footer-nav-item">
+                  <a href="#" class="footer-nav-link">Corporate Enquiry</a>
+                </li>
+                <li class="footer-nav-item">
+                  <a href="#" class="footer-nav-link"
+                    >Exchange/Cancel My Orders</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section class="footer-nav">
+            <header class="footer-nav-header">
+              <p class="footer-nav-title">Customer Care</p>
+              <div class="arrow-buttons-wrapper">
+                <button
+                  class="arrow-button arrow-down-button active"
+                  id="arrowDown"
+                >
+                  <span class="material-symbols-outlined">
+                    keyboard_arrow_down
+                  </span>
+                </button>
+                <button class="arrow-button arrow-up-button" id="arrowUp">
+                  <span class="material-symbols-outlined">
+                    keyboard_arrow_up
+                  </span>
+                </button>
+              </div>
+            </header>
+            <div class="footer-nav-expand hidden">
+              <ul class="footer-nav-list">
+                <li class="footer-nav-item">
+                  <a href="tel:+91 8010288882" class="footer-nav-link"
+                    >Phone: +91 8010288882|+91 8010188881</a
+                  >
+                </li>
+                <li class="footer-nav-item">
+                  <a href="mailto:orders@mypoojabox.com" class="footer-nav-link"
+                    >Email: orders@mypoojabox.com</a
+                  >
+                </li>
+                <li class="footer-nav-item">
+                  <a href="#" class="footer-nav-link"
+                    >Address: My Pooja Box, Jagat Complex, 100 Ft Rd, Ghitorni,
+                    New Delhi 110030</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+        <div class="footer-bottom">
+          <div class="app-store-images">
+            <a href="#">
+              <img
+                src="https://www.mypoojabox.in/cdn/shop/t/219/assets/google_play_btn.png?v=4386011889070212141710858592"
+                alt="google play"
+                class="app-store-image"
+              />
+            </a>
+            <a href="#">
+              <img
+                src="https://www.mypoojabox.in/cdn/shop/t/219/assets/ios_btn.png?v=97251102745360698661710858592"
+                alt="App store"
+                class="app-store-image"
+              />
+            </a>
+          </div>
+          <p class="venture-name">mobikasa ventures llp</p>
+          <div class="copyright-and-select-wrappper">
+            <p class="copyright">&copy 2024, All Rights Reserved.</p>
+            <select name="country" id="country">
+              <option value="india">India</option>
+              <option value="gobal">Gobal</option>
+            </select>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- Linking Swipper JS Script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>
